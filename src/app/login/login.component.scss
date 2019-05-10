@@ -1,0 +1,18 @@
+::ng-deep .mat-form-field-infix {
+    width: 400px !important;
+  }
+
+  ::ng-deep .mat-card {
+      margin: 0px !important;
+      display: inline-block !important;
+      max-width: 600px !important;
+      //width: 600px !important;
+  }
+
+::ng-deep  .simplebox {
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+  }
