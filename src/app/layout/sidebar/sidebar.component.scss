@@ -1,0 +1,12 @@
+:host {
+    background: #FE5F55;
+    padding: 30px
+  }
+  a {
+    color: #495867;
+  }
+
+  ::ng-deep #title-container {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
