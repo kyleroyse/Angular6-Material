@@ -9,6 +9,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
             MatIconModule,
             MatSidenavModule,
             MatTableModule,
-            MatFormFieldModule
+            MatFormFieldModule,
+            MatAutocompleteModule,
+            MatMenuModule
           ],
   exports: [
             MatButtonModule,
@@ -34,7 +38,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
             MatIconModule,
             MatSidenavModule,
             MatTableModule,
-            MatFormFieldModule
+            MatFormFieldModule,
+            MatAutocompleteModule,
+            MatMenuModule
           ],
           schemas: [
             CUSTOM_ELEMENTS_SCHEMA,

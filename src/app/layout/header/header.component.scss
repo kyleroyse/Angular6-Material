@@ -1,7 +1,28 @@
 :host {
-    background: #EEEEEE;
-    padding: 30px;
+    background-color: #EEEEEE;
+    
   }
   a {
     color: #000;
+  }
+
+  #user-img{
+    background-size: 45px 45px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 45px;
+    width: 45px;
+    z-index: 0;
+  }
+
+  ::ng-deep  .simplebox {
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
   }

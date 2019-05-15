@@ -1,37 +1,46 @@
-<div class="container">
-  <div class="row">
-    <div class="col" id="title-container">
-      <h1>Awesome Site</h1>
-    </div>
+<div class="sidebar" data-color="purple" data-background-color="white">
+  <div class="logo">
+    <a href="#" class="simple-text logo-normal">Awesome Site</a>
   </div>
-  <div class="row my-3">
-      <i class="material-icons mr-3">
-          portrait
-          </i>
-    <a routerLink="/login">Login</a>
+  <div class="sidebar-wrapper">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login" routerLinkActive="active-link">
+          <i class="material-icons mr-3">
+              portrait
+              </i>
+              Login</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/registration" routerLinkActive="active-link">
+            <i class="material-icons mr-3">
+                how_to_reg
+                </i>
+                Registration</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard"  routerLinkActive="active-link">
+            <i class="material-icons mr-3">
+                dashboard
+                </i>
+                Dashboard</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/users" routerLinkActive="active-link">
+            <i class="material-icons mr-3">
+                supervised_user_circle
+                </i>
+                Users</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/account-settings" routerLinkActive="active-link">
+            <i class="material-icons mr-3">
+                settings
+                </i>
+                Account Settings</a>
+      </li>
+    </ul>
   </div>
-  <div class="row my-3">
-      <i class="material-icons mr-3">
-          how_to_reg
-          </i>
-    <a routerLink="/registration">Registration</a>
+    <div class="sidebar-background" style="background-image:url('../../../assets/img/mountains.jpg')"></div>
   </div>
-  <div class="row my-3">
-      <i class="material-icons mr-3">
-          dashboard
-          </i>
-    <a routerLink="/dashboard">Dashboard</a>
-  </div>
-  <div class="row my-3">
-      <i class="material-icons mr-3">
-          supervised_user_circle
-          </i>
-    <a routerLink="/users">Users</a>
-  </div>
-  <div class="row my-3">
-      <i class="material-icons mr-3">
-          settings
-          </i>
-    <a routerLink="/account-settings">Account Settings</a>
-  </div>
-</div>
+  
