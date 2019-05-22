@@ -12,6 +12,8 @@ import { LoginComponent } from '../login/login.component';
 import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms'; // <-- NgModel lives here
 import { MaterialModule } from '../material/material.module';
+import { HeaderTitleService } from '../services/header-title.service';
+
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import { MaterialModule } from '../material/material.module';
   ],
   exports: [],
   providers: [
-    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},
+    HeaderTitleService
   ],
 })
 export class LayoutModule { }

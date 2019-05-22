@@ -1,6 +1,6 @@
-<div class="container py-3" fxLayout="row" fxLayoutAlign="end center">
-  <!-- <div style="color: #fff;">Awesome Site</div> -->
-  <div class="row align-items-center px-3" fxLayout="row" fxLayoutGap="20px">
+<div fxLayout="row" fxLayoutAlign="space-between center">
+  <div class="px-5" fxLayout="row" fxLayoutAlign="start center">{{title}}</div>
+  <div fxLayout="row" fxLayoutAlign="end center">
     <form class="example-form">
       <mat-form-field class="example-full-width">
         <input type="text" placeholder="Search" aria-label="Number" matInput [formControl]="myControl"
@@ -12,23 +12,17 @@
         </mat-autocomplete>
       </mat-form-field>
       <i class="material-icons">
-          search
-        </i>
+        search
+      </i>
     </form>
     <button mat-button [matMenuTriggerFor]="menu" class="simplebox">
       <img id="user-img" src="../../../assets/img/kyle tiger.png" class="img-fluid">
     </button>
     <mat-menu #menu="matMenu">
-        <button mat-menu-item class="simplebox">Profile</button>
-        <button mat-menu-item class="simplebox">Settings</button>
-        <hr>
-        <button mat-menu-item class="simplebox" routerLink="/login">Log out</button>
-      </mat-menu>
-    <!-- <a routerLink="/login">Login</a>
-    <a routerLink="/registration">Registration</a>
-    <a routerLink="/dashboard">Dashboard</a>
-    <a routerLink="/users">Users</a>
-    <a routerLink="/account-settings">Account Settings</a> -->
+      <button mat-menu-item class="simplebox">Profile</button>
+      <button mat-menu-item class="simplebox">Settings</button>
+      <hr>
+      <button mat-menu-item class="simplebox" routerLink="/login">Log out</button>
+    </mat-menu>
   </div>
 </div>
-

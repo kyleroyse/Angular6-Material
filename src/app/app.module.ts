@@ -10,28 +10,18 @@ import {PreloadAllModules, RouterModule} from '@angular/router';
 // import { LayoutRoutingModule } from './layout/layout-routing.module';
 import { CdkTableModule } from '@angular/cdk/table';
 
+// Services
 
 // Components
 import { AppComponent } from './app.component';
-// import { LoginComponent } from './login/login.component';
-// import { AccountSettingsComponent } from './account-settings/account-settings.component';
-// import { DashboardComponent } from './dashboard/dashboard.component';
-// import { RegistrationComponent } from './registration/registration.component';
-// import { UsersComponent } from './users/users.component';
-//import { TableComponent } from './uicomponents/table/table.component';
+
 
 
 import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    //TableComponent,
-    // LoginComponent,
-    // AccountSettingsComponent,
-    // DashboardComponent,
-    // RegistrationComponent,
-    // UsersComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -44,10 +34,11 @@ import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/materi
         // RouterModule.forRoot([], { preloadingStrategy: PreloadAllModules }),
     LayoutModule,
     // LayoutRoutingModule,
-    CdkTableModule
+    CdkTableModule,
+    
   ],
   providers: [
-    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+    { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher },
   ],
   bootstrap: [AppComponent]
 })

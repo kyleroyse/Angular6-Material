@@ -17,6 +17,7 @@ import {MatTableModule} from '@angular/material/table';
   declarations: [
     DashboardComponent,
     TableComponent
-  ]
+  ],
+  providers: []
 })
 export class DashboardModule { }
