@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
   providedIn: 'root'
 })
 export class HeaderTitleService {
-  public title = new BehaviorSubject('title');
+  public title = new BehaviorSubject<string>('title');
 
   constructor() { }
 
